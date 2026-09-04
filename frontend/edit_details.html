@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(to left, #9900ff 0%, #33ccff 100%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration {
+        background-color: azure;
+        height: 60vh;
+        width: 50vw;
+        margin: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .email {
+        padding: 5px;
+        margin: 6px;
+    }
+
+    .name {
+        padding: 5px;
+        margin: 6px;
+    }
+
+    .password {
+        padding: 5px;
+        margin: 6px;
+    }
+
+    .contact {
+        padding: 5px;
+        margin: 6px;
+    }
+
+    .stream {
+        width: 100%;
+        padding: 6px;
+        margin: 6px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        margin: 4px;
+        background: linear-gradient(to left, #9900ff 0%, #33ccff 100%);
+    }
+</style>
+
+<body onload="getDetailsById()">
+    <table class="registration">
+        <tr>
+            <th colspan="2">
+                <h1>Edit Profile</h1>
+            </th>
+        </tr>
+
+        <tr>
+            <td><b>Enter Name</b></td>
+            <td><input class="name" type="text" name="name" id="name"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><b>Enter Email</b></td>
+            <td><input type="email" class="email" name="email" id="email"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><b>Enter Contact</b></td>
+            <td><input type="tel" class="contact" name="contact" id="contact"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><b>Enter Password</b></td>
+            <td><input type="password" class="password" name="password" id="password" readonly></td>
+        </tr>
+        <br>
+        <tr>
+            <td><b>Stream</b></td>
+            <td>
+                <select name="stream" id="stream" class="stream">
+                    <option value="Select Option" id="stream_val">Select Option</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="M.B.B.S">M.B.B.S</option>
+                    <option value="B.ARTS">B.ARTS</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2"><input class="btn" type="button" value="Submit" onclick="Update_User()"></th>
+        </tr>
+    </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

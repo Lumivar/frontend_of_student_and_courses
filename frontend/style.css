@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to left, #9900ff 0%, #33ccff 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.registration {
+    background-color: azure;
+    height: 60vh;
+    width: 50vw;
+    margin: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email {
+    padding: 5px;
+    margin: 6px;
+}
+
+.name {
+    padding: 5px;
+    margin: 6px;
+}
+
+.password {
+    padding: 5px;
+    margin: 6px;
+}
+
+.contact {
+    padding: 5px;
+    margin: 6px;
+}
+
+.stream {
+    width: 100%;
+    padding: 6px;
+    margin: 6px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin: 4px;
+    background: linear-gradient(to left, #9900ff 0%, #33ccff 100%);
+}

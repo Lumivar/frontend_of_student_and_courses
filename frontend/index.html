@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table class="registration">
+        <tr>
+            <th colspan="2">
+                <h1>Registration</h1>
+            </th>
+        </tr>
+        <tr>
+            <td><b>Name</b></td>
+
+            <td><input class="name" type="text" name="name" id="name"></td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><b>Email</b></td>
+            <td><input class="email" type="email" name="email" id="email"></td>
+
+        </tr>
+        <tr>
+            <td><b>Contact</b></td>
+            <td><input class="contact" type="tel" name="phoneno" id="contact"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><b>Password</b></td>
+            <td><input class="password" type="password" name="password" id="password"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><b>Stream</b></td>
+            <td>
+                <select name="stream" id="stream" class="stream">
+                    <option value="Select Option">Select Option</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="M.B.B.S">M.B.B.S</option>
+                    <option value="B.ARTS">B.ARTS</option>
+                </select>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <th colspan="3"><input class="btn" type="button" value="REGISTER" onclick="register()"></th>
+        </tr>
+        <tr>
+            <th colspan="2">Already Registered ? <a href="/">Login</a></th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
