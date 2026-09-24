@@ -17,7 +17,7 @@ A simple full-stack student and course management project.
 ## Features
 
 - Student registration and login
-- Forgot password flow
+- Admin-style password reset endpoint (insecure: no reset-token verification)
 - List, search, update, and delete students
 - Create, list, update, and delete courses
 
@@ -63,7 +63,7 @@ The frontend is static and does not require a build step.
 
 - `POST /students/register` — register a student
 - `POST /students/login` — login a student
-- `PUT /students/forgetpassword` — reset password
+- `PUT /students/forgetpassword` — admin-style password reset (insecure: no reset-token verification)
 - `GET /students/allstudents` — get all students
 - `GET /students/getdetails/:id` — get student by ID
 - `POST /students/search` — search students by name/contact
