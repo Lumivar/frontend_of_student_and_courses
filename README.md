@@ -17,13 +17,13 @@ A simple full-stack student and course management project.
 ## Features
 
 - Student registration and login
-- Forgot password flow
+- Insecure/admin-style password reset (email + new password, no reset-token verification)
 - List, search, update, and delete students
 - Create, list, update, and delete courses
 
 ## Prerequisites
 
-- Node.js (v18+ recommended)
+- Node.js (v20.19+)
 - npm
 - MongoDB connection string
 
@@ -63,7 +63,8 @@ The frontend is static and does not require a build step.
 
 - `POST /students/register` — register a student
 - `POST /students/login` — login a student
-- `PUT /students/forgetpassword` — reset password
+- `PUT /students/forgetpassword` — insecure/admin-style password reset (no reset-token verification)
+- `GET /students/` — get all students (requires JWT verification)
 - `GET /students/allstudents` — get all students
 - `GET /students/getdetails/:id` — get student by ID
 - `POST /students/search` — search students by name/contact
@@ -81,4 +82,4 @@ The frontend is static and does not require a build step.
 ## Notes
 
 - Some student APIs include mixed response formats (`success` vs `message` flags).
-- Keep your `.env` file private and never commit real credentials.
+- `backend/.env` must stay local only (it is gitignored) and should never contain committed credentials.
